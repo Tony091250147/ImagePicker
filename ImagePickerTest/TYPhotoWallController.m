@@ -164,6 +164,11 @@ typedef enum TYImageListViewMode
 {
     [self.navigationController dismissViewControllerAnimated:YES completion:^{}];
 }
+
+- (BOOL)elcImagePickerControllerNeedThumbnails:(ELCImagePickerController *)picker
+{
+    return YES;
+}
 #pragma mark GMGridViewDataSource
 - (NSInteger)numberOfItemsInGMGridView:(GMGridView *)gridView
 {
